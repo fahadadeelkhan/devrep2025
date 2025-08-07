@@ -1,0 +1,51 @@
+for windows download git and install
+git --version
+git status
+git add filename # if you want to add more files just us #git add * it will add changes into stagging adter adding it will be commit  using commit command
+git branch
+git commit -m  "First Version of index.html"
+git log                  ***************to check or varify changes committes successfuly or not***********
+git diff    ********** to varify changes**************
+
+git log            *************** varify update ***************************
+git show copy commit id from git log command :filename
+like
+git show commit fd4355453567dada460cda6b84027e27174d1119:index.html
+
+if you mistakenly added ffile in stagging uisng add how to restore it
+git restore  --staged .
+git restore .   ************** if you have added some thing into file and you dont know what you have add and save the file and not add or commit you can restore it last working stage using this *********************
+
+git restore --staged . ************** if you have added some thing into file and you dont know what you have add and save the file and  added you can restore it last working stage using this  will move file from stagging to wroking directory********************* then use this  
+git restore . to restore it to actual file 
+
+if you have added file using git but u have add some thing in file which nee
+like
+
+git add index.html
+git status will show modified in green (ready fir commit ) and modified in red line mean ready for stage
+if you have mistakenlycommited and you want to reset it
+git reset --soft HEAD^ this will send file to stage and reset it
+git reset --hard HEAD^  this will reset configration in file 
+git log -p -2  ********** this will be show last 2 commit and show the differnce************
+git log --pretty=oneline     **************s will be show  all comments and changes in oneline ************
+
+*****************How to add branch *********
+git branch    # to check branch
+git branch feature-branch master     # this will add feature-branch in master 
+git branch feature-branch                # it will create seperate branch not it master 
+git branch -d feature-branch     ### to delete branch 
+********************************************************************
+Merge 
+
+switch to master branch
+git checkout master
+git merge feature-branch
+
+
+git push origion main 
+git fetch 
+
+
+
+hybrid 
